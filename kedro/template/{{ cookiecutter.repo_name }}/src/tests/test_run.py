@@ -42,7 +42,7 @@ import pytest
 from kedro.config import ConfigLoader
 from kedro.io import DataCatalog
 
-from {{ cookiecutter.python_package }}.run import (
+from {{cookiecutter.python_package}}.run import (
     CONF_ROOT,
     DEFAULT_RUN_ENV,
     create_catalog,

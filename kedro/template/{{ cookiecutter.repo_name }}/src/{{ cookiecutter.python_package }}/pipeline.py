@@ -30,8 +30,8 @@
 from kedro.pipeline import Pipeline, node
 
 from .nodes.example import predict, report_accuracy, split_data, train_model
+
 {% else %}
-from kedro.pipeline import Pipeline
 {% endif %}
 # Here you can define your data-driven pipeline by importing your functions
 # and adding them to the pipeline as follows:
