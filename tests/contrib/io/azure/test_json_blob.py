@@ -161,22 +161,6 @@ def test_save_blob_args(blob_from_mock, blob_json_data_set, dummy_dataframe):
     )
 
 
-# pylint: disable=protected-access
-def test_load_extra_params(blob_json_data_set):
-    expected_keys = ["option"]
-    data_set = blob_json_data_set(load_args={"option": "value"})
-    for expected_key in expected_keys:
-        assert expected_key in data_set._load_args.keys()
-
-
-# pylint: disable=protected-access
-def test_save_with_extra_params(blob_json_data_set):
-    expected_keys = ["option"]
-    data_set = blob_json_data_set(save_args={"option": "value"})
-    for expected_key in expected_keys:
-        assert expected_key in data_set._save_args.keys()
-
-
 def test_str_representation(blob_json_data_set):
     data_set = blob_json_data_set(save_args={"option": "value"})
     assert "JSONBlobDataSet" in str(data_set)

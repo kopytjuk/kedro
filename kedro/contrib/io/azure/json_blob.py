@@ -41,7 +41,7 @@ from kedro.io import AbstractDataSet
 class JSONBlobDataSet(AbstractDataSet):
     # pylint: disable=too-many-instance-attributes
     """``JSONBlobDataSet`` loads and saves json(line-delimited) files in Microsoft's Azure
-    blob storage. It uses azure storage SDK to read and write in azure and
+    blob storage. It uses Azure storage SDK to read and write in Azure and
     pandas to handle the json(l) file locally.
 
     Example:
@@ -92,10 +92,10 @@ class JSONBlobDataSet(AbstractDataSet):
             credentials: Credentials (``account_name`` and
                 ``account_key`` or ``sas_token``) to access the Azure blob
             encoding: Default utf-8. Defines encoding of json files downloaded as binary streams.
-            blob_to_bytes_args: Any additional arguments to pass to azure's
+            blob_to_bytes_args: Any additional arguments to pass to Azure's
                 ``get_blob_to_bytes`` method:
                 https://docs.microsoft.com/en-us/python/api/azure.storage.blob.baseblobservice.baseblobservice?view=azure-python#get-blob-to-bytes
-            blob_from_bytes_args: Any additional arguments to pass to azure's
+            blob_from_bytes_args: Any additional arguments to pass to Azure's
                 ``create_blob_from_bytes`` method:
                 https://docs.microsoft.com/en-us/python/api/azure.storage.blob.blockblobservice.blockblobservice?view=azure-python#create-blob-from-bytes
             load_args: Pandas options for loading json(l) files.
