@@ -36,7 +36,7 @@ import pytest
 from kedro.contrib.io.azure import JSONBlobDataSet
 from kedro.io import DataSetError
 
-TEST_FILE_NAME = "test.csv"
+TEST_FILE_NAME = "test.json"
 TEST_CONTAINER_NAME = "test_bucket"
 TEST_CREDENTIALS = {"account_name": "ACCOUNT_NAME", "account_key": "ACCOUNT_KEY"}
 
