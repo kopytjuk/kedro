@@ -40,13 +40,7 @@ from pathlib import Path
 import click
 from click import secho, style
 from kedro.cli import main as kedro_main
-from kedro.cli.utils import (
-    KedroCliError,
-    call,
-    export_nodes,
-    forward_command,
-    python_call,
-)
+from kedro.cli.utils import KedroCliError, call, forward_command, python_call, export_nodes
 
 CONTEXT_SETTINGS = dict(help_option_names=["-h", "--help"])
 
